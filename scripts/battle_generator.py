@@ -19,8 +19,7 @@ def format(template: str, **kwargs: dict[str, str]) -> str:
 
 
 def get_yaml_dir() -> str:
-    d = os.path.join(os.path.dirname(__file__), "../registry/evals")
-    return d
+    return os.path.join(os.path.dirname(__file__), "../registry/evals")
 
 
 def get_data_dir() -> str:
